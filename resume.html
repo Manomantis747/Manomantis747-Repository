@@ -20,19 +20,39 @@
     </head>
     <body class="">
 
-        <header class="sticky-sm-top z-1">
-            <nav class="navbar navbar-expand-sm bg-white">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand"><img src="images/pineLogo2.png" width="60" height="60" class="logo"></a>
-                    <div class="navbar-nav nav-pills">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link ">About</a>
-                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                        <a href="resume.html" class="nav-item nav-link active text-white">Resume</a>
-                        
+        <header>
+            <!--  Navbar Branding with Collapseable Hamburger Menu -->
+    
+            <section class="">
+                <nav class="navbar navbar-expand-sm bg-white text-dark">
+                    <!-- the setting to make the responsive nav bar -->
+                    <div class="container-fluid">
+                        <a href="index.html" class="navbar-brand"><img src="images/pineLogo2.png" width="60" height="60"
+                                class="logo"></a>
+    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <!--       We need a div around our navigation items so they can collapse -->
+                        <div class="collapse navbar-collapse" id="navmenu">
+                            <!--      This is the id for the button to toggle -->
+                            <div class="container-fluid">
+                            <nav class="navbar navbar-expand navbar-dark text-dark">
+    
+                                <div class="navbar-nav nav-pills ms-auto text-dark">
+                                    <a href="index.html" class="nav-item nav-link text-dark">Home</a>
+                                    <a href="about.html" class="nav-item nav-link text-dark">About</a>
+                                    <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
+                                    <a href="resume.html" class="nav-item nav-link text-white active">Resume</a>
+                                </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                    </div>
+    
+                </nav>
+            </section>
         </header>
 
         <button type="button" class="btn btn-primary mx-5 mt-5"><a href="images/ResumeFinal_pine.pdf" type="button" target="_blank" class="text-white text-decoration-none">Download Resume</a></button>

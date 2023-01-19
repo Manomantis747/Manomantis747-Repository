@@ -17,20 +17,40 @@
 </head>
 
 <body>
-  <header class="sticky-sm-top z-1">
-    <nav class="navbar navbar-expand-sm bg-white">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand"><img src="images/pineLogo2.png" width="60" height="60"
-            class="logo"></a>
-        <div class="navbar-nav nav-pills">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="gallery.html" class="nav-item nav-link active text-white">Gallery</a>
-          <a href="resume.html" class="nav-item nav-link">Resume</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header>
+    <!--  Navbar Branding with Collapseable Hamburger Menu -->
+
+    <section class="">
+        <nav class="navbar navbar-expand-sm bg-white text-dark">
+            <!-- the setting to make the responsive nav bar -->
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="images/pineLogo2.png" width="60" height="60"
+                        class="logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--       We need a div around our navigation items so they can collapse -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!--      This is the id for the button to toggle -->
+                    <div class="container-fluid">
+                    <nav class="navbar navbar-expand navbar-dark text-dark">
+
+                        <div class="navbar-nav nav-pills ms-auto text-dark">
+                            <a href="index.html" class="nav-item nav-link text-dark">Home</a>
+                            <a href="about.html" class="nav-item nav-link text-dark">About</a>
+                            <a href="gallery.html" class="nav-item nav-link text-white active">Gallery</a>
+                            <a href="resume.html" class="nav-item nav-link text-dark">Resume</a>
+                        </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </nav>
+    </section>
+</header>
 
   <section class="text-center mt-5">
     <h1>Gallery</h1>
@@ -39,8 +59,8 @@
 
 
   <div class="container">
-    <div class="row row-cols-3 mt-5">
-      <div class="col text-center">
+    <div class="row mt-5">
+      <div class="col-md text-center">
         <div class="">
           <img class="img-fluid" src="images/pineBackground.jpg" alt="CAWD Background">
           <h3 class="mt-3">CAWD Background</h3>
@@ -48,31 +68,31 @@
         </div>
       </div>
 
-      <div class="col text-center">
+      <div class="col-md-4 text-center">
         <img src="images/haunted2_pine.png" alt="Haunted House">
         <h3 class="mt-3">Haunted House</h3>
         <p>This is a Haunted House I made in Blender.</p>
       </div>
 
-      <div class="col text-center">
+      <div class="col-md-4 text-center">
         <img src="images/pineBedroom_1.jpg" alt="Bedroom">
         <h3 class="mt-3">Bedroom</h3>
         <p>This is a scale model of a bedroom I made in Blender.</p>
       </div>
 
-      <div class="col text-center">
+      <div class="col-md-4 text-center">
         <img src="images/pineDrawing1.jpg" alt="Two-Point">
         <h3 class="mt-3">Two-Point</h3>
         <p>This is a drawing I made using the two-point method.</p>
       </div>
 
-      <div class="col text-center">
+      <div class="col-md-4 text-center">
         <img src="images/pineDH33.jpg" alt="Ear">
         <h3 class="mt-4">Ear</h3>
         <p>This is a realistic ear I drew for a project.</p>
       </div>
 
-      <div class="col text-center">
+      <div class="col-md-4 text-center">
         <img src="images/pineDH19.jpg" alt="Buildings">
         <h3 class="mt-3">Buildings</h3>
         <p>This is a collection of basic buildings I drew from an overhead perspective.</p>

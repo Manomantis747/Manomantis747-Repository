@@ -1,4 +1,4 @@
-main{
+main {
     background-image: url(../images/pineBackground.jpg);
     height: 50vh;
     background-repeat: no-repeat;
@@ -9,27 +9,27 @@ main{
     align-items: center;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 
 
-header{
+header {
     box-shadow: 0px 0px 5px 3px gray;
 }
 
-.gallery{
-    width:25%;
+.gallery {
+    width: 25%;
     height: auto;
 }
 
-img:hover{
-    transform:scale(1.10);
-    cursor:pointer;
-   box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-  transition:all 1s ease;
+img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
 }
 
 /* video{
@@ -37,8 +37,25 @@ img:hover{
     height: auto;
 } */
 
-.logo:hover{
+.logo:hover {
     transition: none;
     transform: none;
     box-shadow: none;
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        background-image: url(../images/pineBackground.jpg);
+        height: 20vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        flex-direction: row;
+    }
 }
